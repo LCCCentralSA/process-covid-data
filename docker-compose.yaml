@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  processfile:
+      build: .
+      networks:
+        - project-network
+      ports:
+        - "5000:5000"
+      restart: always
+      environment:
+        BUCKET_NAME: "covid19-analysis-test"
+        DATABASE_NAME: "covid19-database"
+networks:
+  project-network:
+    driver: bridge
