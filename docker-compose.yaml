@@ -8,9 +8,9 @@ services:
         - "5000:5000"
       restart: always
       environment:
-        BUCKET_NAME: "covid19-analysis-test"
-        DATABASE_NAME: "covid19-database"
-        AWS_DEFAULT_REGION: "us-east-1"
+        BUCKET_NAME: ""
+        DATABASE_NAME: ""
+        AWS_DEFAULT_REGION: ""
 networks:
   project-network:
     driver: bridge
